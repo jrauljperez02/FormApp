@@ -37,11 +37,18 @@ const FormInputStyle = styled.div`
   width: 380px;
 
     input{
-        width: 90%;
+        max-width: 100%;
         padding: 15px;
         margin: 10px;
+        margin-left: 0px;
         border-radius: 5px;
         border: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      input {
+        max-width: 50%;
+      }
     }
 
   label{

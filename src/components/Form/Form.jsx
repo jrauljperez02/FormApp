@@ -187,12 +187,15 @@ const FormStyle = styled.form`
     justify-content: center;
     flex-direction: column;
 
-
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0 60px;
     border-radius: 5px;
+
+    @media (max-width: 768px) {
+      max-width: 50%;
+    }
 
     h1{
       margin-top: 30px;
