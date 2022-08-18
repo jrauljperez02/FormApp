@@ -9,6 +9,9 @@ import backAccountFields from '../Utils/BankAccountFields.json'
 
 const Form = () => {
 
+    //  Form component is used to wrap a form where inputs and buttons elements are wrapped
+    
+
     const [showSecondSection, setShowSecondSection] = useState(false);
     const [showThirdSection, setShowThirdSection] = useState(false);
     const [showFourthSection, setShowFourthSection] = useState(false);
@@ -58,63 +61,24 @@ const Form = () => {
       const onChange = (e) => {
         setValues({...values, [e.target.name] : e.target.value})
       }
-    
-    const companyEntries = (
-        <Fragment>
-            <h2>Datos de la empresa.</h2>
-            {fields.map((input) => (
-              <FormInput
-                key={input.id}
-                {...input}
-                value={values[input.name]}
-                onChange={onChange}
-              />
-            ))}
-        </Fragment>
-    );
 
-    const companyAddress = (
+    const fieldsToFill = (name, array) => {
+      return(
         <Fragment>
-            <h2>Domicilio.</h2>
-            {address_fields.map((input) => (
-              <FormInput
-                key={input.id}
-                {...input}
-                value={values[input.name]}
-                onChange={onChange}
-              />
-            ))}
+          <h2>{name}.</h2>
+          {array.map((input) => (
+          <FormInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
         </Fragment>
-    )
+      )
+    };
 
-    const companyLegal = (
-        <Fragment>
-            <h2>Representante legal.</h2>
-            {representativeFields.map((input) => (
-              <FormInput
-                key={input.id}
-                {...input}
-                value={values[input.name]}
-                onChange={onChange}
-              />
-            ))}
-        </Fragment>
-    )
-
-    const bank_account = (
-        <Fragment>
-            <h2>Cuenta bancaria.</h2>
-            {backAccountFields.map((input) => (
-              <FormInput
-                key={input.id}
-                {...input}
-                value={values[input.name]}
-                onChange={onChange}
-              />
-            ))}
-        </Fragment>
-    )
-
+  
   console.log(values)
 
   return (
@@ -122,56 +86,56 @@ const Form = () => {
         <FormStyle onSubmit={handleSubmit}>
         <h1>Formulario</h1>
 
-        {companyEntries}
+        {fieldsToFill('hello', fields)}
             <button 
                 className='display-button'
                 onClick={() => setShowSecondSection(!showSecondSection)}>
                   {showSecondSection ? (
                     <React.Fragment>
                       <i className="fa fa-arrow-up" aria-hidden="true"></i>
-                      <span>Ocultar sección Domicilio</span>
+                      <span>Ocultar sección / Domicilio</span>
                     </React.Fragment>
                   ):(
                     <React.Fragment>
                       <i className="fa fa-arrow-down" aria-hidden="true"></i>
-                      <span>Domicilio</span>
+                      <span>Mostrar sección / Domicilio</span>
                     </React.Fragment>
                   )}
                 
             </button>
-        {showSecondSection && companyAddress}
+        {showSecondSection && fieldsToFill('Domicilio',address_fields)}
             <button 
                 className='display-button'
                 onClick={() => setShowThirdSection(!showThirdSection)}>
                 {showThirdSection ? (
                     <React.Fragment>
                       <i className="fa fa-arrow-up" aria-hidden="true"></i>
-                      <span>Ocultar sección representante legal.</span>
+                      <span>Ocultar sección / Representante legal.</span>
                     </React.Fragment>
                   ):(
                     <React.Fragment>
                       <i className="fa fa-arrow-down" aria-hidden="true"></i>
-                      <span>Representante legal.</span>
+                      <span>Mostrar sección / Representante legal.</span>
                     </React.Fragment>
                   )}
             </button>
-        {showThirdSection && companyLegal}
+        {showThirdSection && fieldsToFill('Representante legal', representativeFields)}
         <button 
                 className='display-button'
                 onClick={() => setShowFourthSection(!showFourthSection)}>
                 {showFourthSection ? (
                     <React.Fragment>
                       <i className="fa fa-arrow-up" aria-hidden="true"></i>
-                      <span>Ocultar sección datos bancarios.</span>
+                      <span>Ocultar sección / Datos bancarios.</span>
                     </React.Fragment>
                   ):(
                     <React.Fragment>
                       <i className="fa fa-arrow-down" aria-hidden="true"></i>
-                      <span>Datos bancarios.</span>
+                      <span>Mostrar sección / Datos bancarios.</span>
                     </React.Fragment>
                   )}
             </button>
-        {showFourthSection && bank_account}
+        {showFourthSection && fieldsToFill("Cuenta bancaria",backAccountFields)}
         
         <button className='button-submit'>Enviar</button>
       </FormStyle>

@@ -4,6 +4,12 @@ import Form from "./components/Form/Form";
 
 const App = () => {
 
+  // Return JSX code where all the components in the app will be rendered
+  // Args :
+  //    No args passed
+  // Returns :
+  //    JSX code where all the components will be rendered
+
   return (
     <Main>
       <Form/>
