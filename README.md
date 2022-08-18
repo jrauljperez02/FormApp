@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 https://form-app-weld.vercel.app/
 
 
+In folder utils, inside src path, you will find all the required fields that a customer has to fill to use the form register app
+
 ## Or you can run the project using the following available scripts
 
 In the project directory, you can run:
