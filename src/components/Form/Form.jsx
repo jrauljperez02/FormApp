@@ -86,7 +86,7 @@ const Form = () => {
         <FormStyle onSubmit={handleSubmit}>
         <h1>Formulario</h1>
 
-        {fieldsToFill('hello', fields)}
+        {fieldsToFill('Datos de usuario', fields)}
             <button 
                 className='display-button'
                 onClick={() => setShowSecondSection(!showSecondSection)}>
