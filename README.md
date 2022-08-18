@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 https://form-app-weld.vercel.app/
 
 
-In folder utils, inside src/components path, you will find all the required fields that a customer has to fill to use the form register app
+In folder utils, inside src/components path, you will find all the required fields in JSON files, that a customer has to fill to use the form register app, all I did was 
+fetch those JSON and use it inside form component
 
 ## Or you can run the project using the following available scripts
 
