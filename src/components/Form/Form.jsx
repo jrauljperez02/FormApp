@@ -30,13 +30,24 @@ const Form = () => {
           ciudad: "",
           estado: "",
           pais: "",
-          
-          
-          username: "",
+          comprobante_de_domicio: "",
+          telefono: "",
           email: "",
-          birthday: "",
-          password: "",
-          confirmPassword: "",
+          nombre: "",
+          genero: "",
+          fecha_de_nacimiento: "",
+          lugar_de_nacimiento: "",
+          pais_de_nacimiento: "",
+          nacionalidad_representante: "",
+          CURP: "",
+          rfc_representante: "",
+          domicilio_representante: "",
+          estado_civil: "",
+          email_representante: "",
+          telefono_representante: "",
+          identificacion: "",
+          CLABE: "",
+          banco: "",
         }
       );
     
@@ -104,6 +115,7 @@ const Form = () => {
         </Fragment>
     )
 
+  console.log(values)
 
   return (
     <Fragment>
@@ -116,12 +128,12 @@ const Form = () => {
                 onClick={() => setShowSecondSection(!showSecondSection)}>
                   {showSecondSection ? (
                     <React.Fragment>
-                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-up" aria-hidden="true"></i>
                       <span>Ocultar sección Domicilio</span>
                     </React.Fragment>
                   ):(
                     <React.Fragment>
-                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-down" aria-hidden="true"></i>
                       <span>Domicilio</span>
                     </React.Fragment>
                   )}
@@ -133,12 +145,12 @@ const Form = () => {
                 onClick={() => setShowThirdSection(!showThirdSection)}>
                 {showThirdSection ? (
                     <React.Fragment>
-                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-up" aria-hidden="true"></i>
                       <span>Ocultar sección representante legal.</span>
                     </React.Fragment>
                   ):(
                     <React.Fragment>
-                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-down" aria-hidden="true"></i>
                       <span>Representante legal.</span>
                     </React.Fragment>
                   )}
@@ -149,12 +161,12 @@ const Form = () => {
                 onClick={() => setShowFourthSection(!showFourthSection)}>
                 {showFourthSection ? (
                     <React.Fragment>
-                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-up" aria-hidden="true"></i>
                       <span>Ocultar sección datos bancarios.</span>
                     </React.Fragment>
                   ):(
                     <React.Fragment>
-                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-down" aria-hidden="true"></i>
                       <span>Datos bancarios.</span>
                     </React.Fragment>
                   )}

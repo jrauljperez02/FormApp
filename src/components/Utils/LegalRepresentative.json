@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "name": "nacionalidad",
+      "name": "nacionalidad_representante",
       "type": "text",
       "placeholder": "Nacionalidad",
       "errorMessage": "Campo requerido",
