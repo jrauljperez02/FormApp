@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "CLABE",
+      "type": "number",
+      "placeholder": "CLABE",
+      "errorMessage": "Campo requerido",
+      "label": "CLABE",
+      "required": true
+    },
+    {
+      "id": 2,
+      "name": "banco",
+      "type": "text",
+      "placeholder": "Banco",
+      "errorMessage": "Campo requerido",
+      "label": "Banco",
+      "required": true
+    }
+  ]

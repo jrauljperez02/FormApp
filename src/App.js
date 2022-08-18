@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import './App.css'
+import Form from "./components/Form/Form";
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Form/>
+    </Main>
   );
 }
 
 export default App;
+
+const Main = styled.div`
+  display : flex;
+  align-items : center;
+  justify-content : center;
+
+  background: linear-gradient(
+    rgba(10, 100, 150, 1),
+    rgba(255, 255, 255, 0.3)
+  );
+
+
+  background-size: cover;
+
+  background-position: center;
+  `

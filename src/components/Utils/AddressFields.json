@@ -1,0 +1,101 @@
+[
+    {
+      "id": 1,
+      "name": "nombre_calle",
+      "type": "Address",
+      "placeholder": "Calle o avenida",
+      "errorMessage": "Campo requerido",
+      "label": "Calle o avenida",
+      "required": true
+    },
+    {
+      "id": 2,
+      "name": "numero_exterior",
+      "type": "text",
+      "placeholder": "Numero exterior",
+      "errorMessage": "Campo requerido",
+      "label": "Numero Exterior",
+      "required": true
+    },
+    {
+      "id": 3,
+      "name": "numero_interior",
+      "type": "number",
+      "placeholder": "Numero interior",
+      "errorMessage": "Campo requerido",
+      "label": "Numero interior",
+      "required": false
+    },
+    {
+      "id": 4,
+      "name": "codigo_postal",
+      "type": "number",
+      "placeholder": "Código Postal",
+      "errorMessage": "Campo requerido",
+      "label": "Código Postal",
+      "required": true
+    },
+    {
+      "id": 5,
+      "name": "colonia",
+      "type": "text",
+      "placeholder": "Colonia o Urbanización",
+      "errorMessage": "Campo requerido",
+      "label": "Colonia o Urbanización",
+      "required": true
+    },
+    {
+      "id": 6,
+      "name": "ciudad",
+      "type": "text",
+      "placeholder": "Ciudad o Población",
+      "errorMessage": "Campo requerido",
+      "label": "Ciudad o Población",
+      "required": true
+    },
+    {
+        "id": 7,
+        "name": "estado",
+        "type": "text",
+        "placeholder": "Entidad Federativa o Estado",
+        "errorMessage": "Campo requerido",
+        "label": "Entidad Federativa o Estado",
+        "required": true
+      },
+      {
+        "id": 8,
+        "name": "pais",
+        "type": "text",
+        "placeholder": "País",
+        "errorMessage": "Campo requerido",
+        "label": "País",
+        "required": true
+      },
+      {
+        "id": 9,
+        "name": "comprobante_de_domicio",
+        "type": "file",
+        "placeholder": "Comprobante de Domicilio",
+        "errorMessage": "Campo requerido",
+        "label": "Comprobante de Domicilio",
+        "required": true
+      },
+      {
+        "id": 10,
+        "name": "telefono",
+        "type": "number",
+        "placeholder": "Numero telefonico",
+        "errorMessage": "Campo requerido",
+        "label": "Numero telefonico",
+        "required": true
+      },
+      {
+        "id": 11,
+        "name": "email",
+        "type": "email",
+        "placeholder": "Email",
+        "errorMessage": "Debe ser una direccion de email valida!",
+        "label": "Email",
+        "required": true
+      }
+  ]

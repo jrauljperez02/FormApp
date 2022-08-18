@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "razon_social",
+      "type": "text",
+      "placeholder": "Razon social",
+      "errorMessage": "Campo requerido",
+      "label": "Razon social",
+      "pattern": "^[A-Za-z0-9]{3,16}$",
+      "required": true
+    },
+    {
+      "id": 2,
+      "name": "nombre_comercial",
+      "type": "text",
+      "placeholder": "Nombre Comercial",
+      "errorMessage": "Campo requerido",
+      "label": "Nombre comercial",
+      "required": true
+    },
+    {
+      "id": 3,
+      "name": "fecha_de_constitucion",
+      "type": "date",
+      "placeholder": "Fecha de Constitucion",
+      "errorMessage": "Campo requerido",
+      "label": "Fecha de Constitucion",
+      "required": true
+    },
+    {
+      "id": 4,
+      "name": "rfc",
+      "type": "text",
+      "placeholder": "RFC",
+      "errorMessage": "Campo requerido",
+      "label": "RFC",
+      "required": true
+    },
+    {
+      "id": 5,
+      "name": "regimen_fiscal",
+      "type": "text",
+      "placeholder": "Regimen Fiscal",
+      "errorMessage": "Campo requerido",
+      "label": "Regimen Fiscal",
+      "required": true
+    },
+    {
+      "id": 6,
+      "name": "industria",
+      "type": "text",
+      "placeholder": "Industria",
+      "errorMessage": "Campo requerido",
+      "label": "Industria",
+      "required": true
+    }
+  ]

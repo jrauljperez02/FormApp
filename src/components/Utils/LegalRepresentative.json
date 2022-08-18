@@ -1,0 +1,120 @@
+[
+    {
+      "id": 1,
+      "name": "nombre",
+      "type": "text",
+      "placeholder": "Nombre",
+      "errorMessage": "Campo requerido",
+      "label": "Nombre",
+      "required": true
+    },
+    {
+      "id": 2,
+      "name": "genero",
+      "type": "text",
+      "placeholder": "Genero",
+      "errorMessage": "Campo requerido",
+      "label": "Genero",
+      "required": true
+    },
+    {
+      "id": 3,
+      "name": "fecha_de_nacimiento",
+      "type": "date",
+      "placeholder": "Fecha de nacimiento",
+      "errorMessage": "Campo requerido",
+      "label": "Fecha de nacimiento",
+      "required": false
+    },
+    {
+      "id": 4,
+      "name": "lugar_de_nacimiento",
+      "type": "address",
+      "placeholder": "Entidad Federativa de nacimiento",
+      "errorMessage": "Campo requerido",
+      "label": "Entidad Federativa de nacimientol",
+      "required": true
+    },
+    {
+      "id": 5,
+      "name": "pais_de_nacimiento",
+      "type": "text",
+      "placeholder": "País de nacimiento",
+      "errorMessage": "Campo requerido",
+      "label": "País de nacimiento",
+      "required": true
+    },
+    {
+      "id": 6,
+      "name": "nacionalidad",
+      "type": "text",
+      "placeholder": "Nacionalidad",
+      "errorMessage": "Campo requerido",
+      "label": "Nacionalidad",
+      "required": true
+    },
+    {
+        "id": 7,
+        "name": "CURP",
+        "type": "text",
+        "placeholder": "CURP",
+        "errorMessage": "Campo requerido",
+        "label": "CURP",
+        "required": true
+      },
+      {
+        "id": 8,
+        "name": "rfc_representante",
+        "type": "text",
+        "placeholder": "RFC",
+        "errorMessage": "Campo requerido",
+        "label": "RFC",
+        "required": true
+      },
+      {
+        "id": 9,
+        "name": "domicilio_representante",
+        "type": "text",
+        "placeholder": "Domicilio",
+        "errorMessage": "Campo requerido",
+        "label": "Domicilio",
+        "required": true
+      },
+      {
+        "id": 10,
+        "name": "estado_civil",
+        "type": "text",
+        "placeholder": "Estado civil",
+        "errorMessage": "Campo requerido",
+        "label": "Estado civil",
+        "required": true
+      },
+      {
+        "id": 11,
+        "name": "email_representante",
+        "type": "email",
+        "placeholder": "Email",
+        "errorMessage": "Debe ser una direccion de email valida!",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "id": 12,
+        "name": "telefono_representante",
+        "type": "number",
+        "placeholder": "Teléfono",
+        "errorMessage": "Campo requerido",
+        "label": "Teléfono",
+        "required": true
+      },
+      {
+        "id": 13,
+        "name": "identificacion",
+        "type": "file",
+        "placeholder": "Documento de identificación",
+        "errorMessage": "Campo requerido",
+        "label": "Documento de identificación",
+        "required": true
+      }
+
+  ]
